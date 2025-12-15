@@ -21,7 +21,7 @@
       <?php if (isset($_SESSION["isLogin"]) && $_SESSION["isLogin"]): ?>
         <nav class="nav flex items-center gap-3">
         </nav>
-        <a class="capitalize px-4 py-2 rounded-lg cursor-pointer text-sm font-semibold text-blue-900 hover:bg-blue-100 hover:text-blue-800 transition">logout</a>
+        <a href="./authentication/logout.php" class="capitalize px-4 py-2 rounded-lg cursor-pointer text-sm font-semibold text-blue-900 hover:bg-blue-100 hover:text-blue-800 transition">logout</a>
       <?php endif ?>
     </div>
   </header>
@@ -46,7 +46,7 @@
       <?php if (!(isset($_SESSION["isLogin"]) && $_SESSION["isLogin"])): ?>
         <a href="./authentication/login.php"
           class="inline-flex items-center gap-2 bg-white text-blue-900 font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 hover:bg-blue-50 transition duration-300">
-          🚀 Commencer
+          Commencer
         </a>
       <?php endif ?>
     </div>

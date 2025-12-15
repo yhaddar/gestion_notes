@@ -44,7 +44,7 @@ $modules = $prepare->fetchAll(PDO::FETCH_ASSOC);
             <?php if (isset($_SESSION["isLogin"]) && $_SESSION["isLogin"]): ?>
                 <nav class="nav flex items-center gap-3">
                 </nav>
-                <a class="capitalize px-4 py-2 rounded-lg cursor-pointer text-sm font-semibold text-blue-900 hover:bg-blue-100 hover:text-blue-800 transition">logout</a>
+                <a href="../authentication/logout.php" class="capitalize px-4 py-2 rounded-lg cursor-pointer text-sm font-semibold text-blue-900 hover:bg-blue-100 hover:text-blue-800 transition">logout</a>
             <?php endif ?>
         </div>
     </header>
