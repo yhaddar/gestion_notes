@@ -1,6 +1,7 @@
 <?php
 require_once "../config/db.php";
 session_start();
+require_once "../authentication/session.php";
 
 $query = "SELECT * FROM mentions";
 $prepare = $pdo->prepare($query);

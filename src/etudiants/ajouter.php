@@ -1,6 +1,7 @@
 <?php
 
 require_once "../config/db.php";
+require_once "../authentication/session.php";
 session_start();
 
 $module_prepare = $pdo->prepare("SELECT id, intitule FROM module");

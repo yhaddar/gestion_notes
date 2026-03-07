@@ -1,6 +1,7 @@
 <?php
 require_once "../config/db.php";
 session_start();
+require_once "../authentication/session.php";
 
 $enseignants_prepare = $pdo->prepare("SELECT id, nom, prenom FROM enseignant");
 $enseignants_prepare->execute([]);

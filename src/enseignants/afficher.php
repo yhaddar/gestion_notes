@@ -1,6 +1,7 @@
 <?php
 require_once "../config/db.php";
 session_start();
+require_once "../authentication/session.php";
 
 $query = "SELECT e.*, GROUP_CONCAT(m.intitule SEPARATOR ', ') AS modules FROM enseignant e
             LEFT JOIN module m ON e.id = m.id_enseignant

@@ -8,7 +8,6 @@
         $login = $pdo->prepare("SELECT * FROM users WHERE `username` = ?");
         $login->execute([$username]);
         if($login->fetch() > 0){
-            $_SESSION["username"] = $username;
             $_SESSION["isLogin"] = true;
             header("Location: ../index.php");
         }
